@@ -54,7 +54,7 @@ print(f"Zeq = {R1} + j* {soma_reat} [ohms]")
 print(f"Soma da reatância = {soma_reat} [ohms]")
 
 # Calculos voltados para o ensaio de rotor bloqueado
-iL_medio = sum(I_linha_RB)/len(I_linha_RB)
+iL_medio = mean(I_linha_RB)
 P_entrada = abs(P_wattimetros_RB[0] + P_wattimetros_RB[1])
 
 if montagem == "delta":
