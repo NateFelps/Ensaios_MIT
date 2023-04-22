@@ -1,3 +1,6 @@
+from math import sqrt
+from statistics import mean
+
 def calc_coef(tipo): # Tabela da norma NBR 5383-1:2002
     if tipo == 'rotor_bobinado': coef = 0.78
     elif tipo == 'D': coef = 0.78
@@ -6,9 +9,6 @@ def calc_coef(tipo): # Tabela da norma NBR 5383-1:2002
     else: coef = 1
 
     return coef    
-
-from math import sqrt
-from statistics import mean
 
 # Dados colhidos no ensaio CC e a vazio:
 montagem = "delta"
